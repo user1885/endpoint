@@ -32,12 +32,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Auth
 
-AUTH_USER_MODEL = 'custom_auth.User'
+# AUTH_USER_MODEL = 'custom_auth.User'
 
-LOGIN_URL = 'sign-in/'
+# LOGIN_URL = 'sign-in/'
+
 
 # Application definition
 
@@ -48,8 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'social',
+    'rest_framework',
     'custom_auth',
+    
 ]
 
 MIDDLEWARE = [
