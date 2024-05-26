@@ -34,10 +34,9 @@ ALLOWED_HOSTS = []
 
 # Auth
 
-# AUTH_USER_MODEL = 'custom_auth.User'
+AUTH_USER_MODEL = 'custom_auth.User'
 
 # LOGIN_URL = 'sign-in/'
-
 
 # Application definition
 
@@ -50,7 +49,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'custom_auth',
-    
+    'connections',
+    'content',
+    'channels',
+    'points',
+    'user_messages',
 ]
 
 MIDDLEWARE = [
